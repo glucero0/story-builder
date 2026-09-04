@@ -58,18 +58,23 @@ python -m story_builder
 
 ## Use
 
-1. Paste your OpenRouter API key and click **Save settings**.
+1. Copy `config.example.yaml` to `config.yaml` and paste your OpenRouter API key, or paste it in the app and click **Save settings**.
 2. Drop text files onto the left list.
 3. Optionally check **Remove Markdown tags**.
 4. Click **Arrange story**.
 5. Copy the result from the story box.
 
-Settings (API key, model, and the Markdown checkbox) are stored locally:
+## Configuration
 
-- Windows: `%APPDATA%\StoryBuilder\config.json`
-- macOS / Linux: `~/.config/StoryBuilder/config.json`
+Settings are stored in `config.yaml` in the project root, next to `app.py`:
 
-You can also set `OPENROUTER_API_KEY` in the environment. Do not commit API keys.
+```yaml
+api_key: ""
+model: openai/gpt-4o-mini
+strip_markdown: false
+```
+
+Copy `config.example.yaml` to `config.yaml` (or click **Save settings** in the app). `config.yaml` is gitignored. Do not commit API keys.
 
 The default model is `openai/gpt-4o-mini`. The model dropdown accepts any OpenRouter model id.
 
