@@ -1,0 +1,6 @@
+# Copy this file to config.yaml and fill in your OpenRouter key.
+# config.yaml is gitignored. Do not commit real keys.
+
+api_key: ""
+model: openai/gpt-4o-mini
+strip_markdown: false
