@@ -7,7 +7,7 @@ license = { file = "LICENSE" }
 requires-python = ">=3.10"
 authors = [{ name = "glucero0" }]
 keywords = ["story", "openrouter", "markdown", "desktop"]
-dependencies = ["PySide6>=6.7.0"]
+dependencies = ["PySide6>=6.7.0", "PyYAML>=6.0"]
 
 [project.urls]
 Issues = "https://github.com/glucero0/story-builder/issues"
